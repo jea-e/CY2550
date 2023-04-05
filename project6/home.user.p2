@@ -1,0 +1,24 @@
+# Last Modified: Mon Apr  3 13:39:46 2023
+abi <abi/3.0>,
+
+include <tunables/global>
+
+/home/jea-e/p2 flags=(audit) {
+  include <abstractions/base>
+
+  /home/jea-e/p2 mr,
+  /home/jea-e/.project2/config rw,
+  /home/jea-e/template r,
+  /tmp/project2* rw,
+  /var/log/syslog r,
+  /etc/fstab r,
+  /etc/crontab r,
+  /run/systemd/resolve/stub-resolv.conf r,
+  /etc/passwd r,
+  /etc/hosts r,
+  network inet stream,
+  /proc/version r,
+  /proc/buddyinfo r,
+
+}
+
