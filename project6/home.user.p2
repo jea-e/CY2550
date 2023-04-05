@@ -19,5 +19,5 @@ include <tunables/global>
   network inet stream,
   /proc/version r,
   /proc/buddyinfo r,
-}
 
+}
